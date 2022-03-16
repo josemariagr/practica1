@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Resumen Práctica 1 FAST</title>
+	<link href="resumen.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<h1>Resumen de la pŕactica 1 de FAST</h1>
+	<h2>Elementos de línea y de bloque</h2>
+	<p class="grande">Esto es un párrafo que hay que ponerlo asi: &lt;p&gt; y se trata
+		de un elemento de bloque y <span class="dentro"> aplicando estilo para que se vea más grande y además
+		se usa la etiqueta &lt;span&gt; para delimitar texto con otro estilo</span></p>
+
+	<p>Este es el segundo párrafo en el que podemos usar
+	   <strong>negrita con la etiqueta &lt;strong&gt;</strong> y además <em>cursiva
+	   con la etiqueta &lt;em&gt;</em> que son etiquetas de línea.</p>
+
+	<code>Con la etiqueta &lt;code&gt; ponemos el texto en este formato </code>
+
+	<p class="lineadoble">Con la etiqueta &lt;ins&gt; y &lt;strong&gt; <strong><ins> el texto se ve así</ins></strong>
+		y con la etiqueta &lt;del&gt; <del> lo vemos de esta forma</del></p>
+
+	<blockquote class="estilo1">Con la etiqueta &lt;blockquote&gt; que es de bloque vemos el texto
+		con un espacio tab antes y sirve para poner citas</blockquote>
+
+	<h2>Listas ordenadas y no ordenadas</h2>
+	<ul class="lista1">
+		<h3>Lista no ordenada:</h3>
+		<li>Primer elemento</li>
+		<li>Segundo elemento</li>
+		<li class="listafondo">Tercer elemento con fondo</li>
+	</ul>
+	
+	<ol class="lista2">
+		<h3>Lista ordenada con iniciales 1. y otra con A.</h3>
+		<li> Revisar cabecera </li>
+		<li> Revisar etiquetas de cierre </li>
+		<ol type="A">
+			<!-- Esto no es recomendable ponerlo, es mejor en hoja css -->
+			<li> Errores típicos en &lt;br&gt; y &lt;hr&gt; </li>
+			<li> Revisar elementos &lt;li&gt; </li>
+		</ol>
+		<li> Revisar case-sensitive </li>
+	</ol>
+	
+	<h2>Imágenes y Tablas en html</h2>
+	<div>
+	<p>Podemos usar la etiqueta &lt;div&gt; para crear un bloque y poder trabajar independiente con él.</p>
+	<p>Imagen que está en el directorio del servidor:</p>
+	<img src="Logo-US.png" alt="Logo Universidad de Sevilla" height="120" width="130" />
+	<p> Imagen con direccion externa que no está en nuestro servidor: </p>
+	<img src="https://www.etsi.us.es/archivos/servicios/publicaciones/imagenes/tituloLogoGrande.png"
+		alt="Logo Universidad de Sevilla" height="100" width="240" /><br/>
+	</div>	
+	<!-- La etiqueta <br/> es salto de línea o un enter -->
+	<br/>
+	<table id="puntuado">
+		<caption><strong> Título de la tabla </strong></caption>
+		<tr class="fondo">
+			<th>col 1</th>
+			<th>col 2</th>
+			<th>col 3</th>
+			<th>col 4</th>
+			<th>col 5</th>
+		</tr>
+		<tr>
+			<td colspan="2">1.1</td>
+			<td>1.3</td>
+			<td>1.4</td>
+			<td>1.5</td>
+		</tr>
+		<tr>
+			<td>2.1</td>
+			<td>2.2</td>
+			<td>2.3</td>
+			<td rowspan="3">2.4</td>
+			<td>2.5</td>
+		</tr>
+		<tr>
+			<td>3.1</td>
+			<td>3.2</td>
+			<td>3.3</td>
+			<td>3.5</td>
+		</tr>
+		<tr>
+			<td>4.1</td>
+			<td>4.2</td>
+			<td>4.3</td>
+			<td>4.5</td>
+		</tr>
+		
+	</table>
+	
+	<table class="puntuadoyfondo">
+		<caption><strong> Título de la tabla 2 </strong></caption>
+		<tr class="fondo">
+			<th>col 1</th>
+			<th>col 2</th>
+			<th>col 3</th>
+			<th>col 4</th>
+			<th>col 5</th>
+		</tr>
+		<tr>
+			<td colspan="2">1.1</td>
+			<td>1.3</td>
+			<td>1.4</td>
+			<td>1.5</td>
+		</tr>
+		<tr>
+			<td>2.1</td>
+			<td>2.2</td>
+			<td>2.3</td>
+			<td rowspan="3">2.4</td>
+			<td>2.5</td>
+		</tr>
+		<tr>
+			<td>3.1</td>
+			<td>3.2</td>
+			<td>3.3</td>
+			<td>3.5</td>
+		</tr>
+		<tr class="centrado">
+			<td>4.1</td>
+			<td>4.2</td>
+			<td>4.3</td>
+			<td>4.5</td>
+		</tr>
+	</table>
+	
+	<h2> Enlaces Relativos y Absolutos</h2>
+	
+	<h3> Absolutos </h3>
+	<ul>
+		<li> <a href="http://www.google.es">Google</a> Enlace Absoluto. </li>
+		<li> <a href="https://ev.us.es/">Enseñanza virtual</a> Enlace seguro </li>
+		<li> <a href="https://www.etsi.us.es/archivos/informacion/academica/documentos/calendario_2122_grados.pdf">Calendario
+				ESTI 21-22</a> Enlace a archivo pdf</li>
+	</ul>
+
+	<h3> Relativos</h3>
+	<ul>
+		<li> <a href="../enlaces/enlaces01.html">Enlaces</a> Regresa a un nivel superior y va a enlaces</li>
+		<li> <a href="../enlaces/fast/teoria/tema01.html">Tema 01 de fast</a>
+			Regresa un nivel y salta tres niveles por debajo</li>
+		<li> <a href="../enlaces/fast/teoria/tema01.html#apartado03">Tema 01 de fast</a>
+			Regresa un nivel y va tres niveles por debajo y salta al apartado 03</li>
+	</ul>
+	
+	<h2> Formularios</h2>
+	<ul>
+		<li> <a href="../formularios/formulario_cv.html">Formulario</a> Acceso a formulario</li>
+	</ul>
+
+</body>
+
+</html>

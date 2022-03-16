@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.grande {font-size: 1.4em;}
+
+.dentro {background-color: green; color: red; font-size: 0.8em;}
+
+/*ElementoA > ElementoB, se aplica al ElementoB que es hijo del ElementoA*/
+p > del{background-color: green;}
+
+p.lineadoble{border-width: 8px; border-style: double; background-color: yellow;}
+
+.estilo1 { color: green; font-style: italic;}
+
+.lista1{float: left; width: 40% ;}
+.listafondo{background-color: aquamarine;}
+
+.lista2{float: left; width: 50% ;}
+
+div{text-align: center;}
+
+/*Elementos p hijos de div va a afectarle esta regla*/
+div > p{font-family: "Courier New", monospace}
+
+#puntuado{border:dotted;float: left; width: 30% ; margin: 3em;}
+
+table.puntuadoyfondo{border:double; border-width: 8px; 
+background-image: url(../modelo/logocss.gif);
+background-repeat: repeat; padding:5em; width: 55% ;}
+
+.centrado{text-align: center;}
+
+tr.fondo{background-color: yellow; color: blue;}
